@@ -31,8 +31,6 @@ export class Food {
                 currentPack = 0;
             }
         }
-        // at the end we want to make sure the last pack will also be accounted for
-        topThreePacks = this.updateTopPacks(currentPack, topThreePacks);
         return topThreePacks.reduce((sum, pack) => sum + pack, 0);
 
     }
